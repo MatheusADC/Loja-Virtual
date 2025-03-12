@@ -8,21 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" type="image/png" href="https://matheusadc.github.io/Loja-Virtual/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://matheusadc.github.io/Loja-Virtual/img/favicon/favicon-96x96.png"
+        sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="https://matheusadc.github.io/Loja-Virtual/img/favicon/favicon.svg">
     <link rel="shortcut icon" href="https://matheusadc.github.io/Loja-Virtual/img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://matheusadc.github.io/Loja-Virtual/img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://matheusadc.github.io/Loja-Virtual/img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="https://matheusadc.github.io/Loja-Virtual/img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/estilos.css">
     <base href="https://matheusadc.github.io/Loja-Virtual/">
-    <style>
-        p.truncate-3l {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    </style>
 </head>
 
 <body style="min-width: 372px;">
@@ -49,9 +43,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="login.html">Entrar</a>
                         </li>
-                        <li class="nav-item me-0">
+                        <li class="nav-item">
+                            <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-1"
+                                style="font-size: 10px; padding: 3px 6px; min-width: 16px; height: 16px; line-height: 1;"
+                                title="4 produto(s) no carrinho">
+                                <small>4</small>
+                            </span>
                             <a href="carrinho.html" class="nav-link text-white">
-                                <i class="bi bi-cart3" width="24" height="24" fill="currentColor"></i>
+                                <i class="bi bi-cart3" style="font-size: 22px; line-height: 22px;"></i>
                             </a>
                         </li>
                     </ul>
@@ -144,14 +143,16 @@
             <div class="row g-3">
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
                                     d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
                             </svg>
                         </a>
-                        <img src="./img/produtos/000001.jpg" alt="Banana Prata" class="card-img-top">
+                        <a href="produto.html">
+                            <img src="./img/produtos/000001.jpg" alt="Banana Prata" class="card-img-top">
+                        </a>
                         <div class="card-header">
                             R$ 4,50
                         </div>
@@ -163,9 +164,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -173,7 +174,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -206,7 +207,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
                                 <path
@@ -225,9 +226,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -235,7 +236,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -249,14 +250,14 @@
                         <div class="card-body">
                             <h5 class="card-title">Maçã Gala</h5>
                             <p class="card-text truncate-3l">
-                               Maçã Gala da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                Maçã Gala da melhor qualidade possível, direto do produtor rural para a sua mesa.
                             </p>
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -264,7 +265,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -283,9 +284,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -293,7 +294,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
                                 <path
@@ -312,9 +313,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -322,7 +323,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -336,14 +337,15 @@
                         <div class="card-body">
                             <h5 class="card-title">Abacate Ouro Verde</h5>
                             <p class="card-text truncate-3l">
-                                Abacate Ouro Verde da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                Abacate Ouro Verde da melhor qualidade possível, direto do produtor rural para a sua
+                                mesa.
                             </p>
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -351,7 +353,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -370,9 +372,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -380,7 +382,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -399,9 +401,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -409,7 +411,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -423,14 +425,15 @@
                         <div class="card-body">
                             <h5 class="card-title">Abobrinha Italiana</h5>
                             <p class="card-text truncate-3l">
-                                Abobrinha Italiana da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                Abobrinha Italiana da melhor qualidade possível, direto do produtor rural para a sua
+                                mesa.
                             </p>
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -438,7 +441,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -457,9 +460,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -467,7 +470,7 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light position-relative">
-                        <a href="" class="position-absolute top-0 end-0 p-2 text-danger">
+                        <a href="#" class="position-absolute top-0 end-0 p-2 text-danger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path
@@ -486,9 +489,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-danger">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
                                     Adicionar ao Carrinho
-                                </button>
+                                </a>
                             </form>
                             <small class="text-success">320,5kg em estoque</small>
                         </div>
@@ -541,7 +544,7 @@
     <footer class="border-top fixed-bottom text-muted bg-light">
         <div class="container">
             <div class="row py-3">
-                <div class="col-12 col-md-4 text-center text-md-start">
+                <div class="col-12 col-md-4 text-center">
                     &copy; 2025 - Quitanda Online Ltda ME<br>
                     Rua Virtual Inexistente, 171, Compulândia/PC <br>
                     CNPJ 99.999.999/0001-99
